@@ -1,0 +1,28 @@
+{
+  "name": "eve-image-service",
+  "version": "0.0.1",
+  "description": "Fetch images and renders from Eve Online's image service.",
+  "main": "./dist/index.js",
+  "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "eve",
+    "online",
+    "images",
+    "render",
+    "type"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "@types/bent": "^7.0.1"
+  },
+  "dependencies": {
+    "bent": "^7.1.2"
+  }
+}
