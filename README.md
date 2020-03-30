@@ -72,3 +72,9 @@ fetchCorporationLogo('917701062', 256).then(buf => {
   })
 })
 ```
+
+## License
+
+Copyright 2020 Michiel van der Velde.
+
+This software is licensed under [the MIT License](LICENSE).
