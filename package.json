@@ -1,6 +1,6 @@
 {
   "name": "eve-image-service",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fetch images and renders from Eve Online's image service.",
   "main": "./dist/index.js",
   "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
