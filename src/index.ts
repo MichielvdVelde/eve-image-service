@@ -21,7 +21,7 @@ function isPowerOfTwo (size: number) {
  * @return            A `Buffer` (node.js) or `ArrayByffer` (browser)
  */
 export async function fetchAllianceLogo (
-  allianceId: string,
+  allianceId: number,
   size: number,
   tenant: 'tranquility' | 'singularity' = 'tranquility'
 ): Promise<Buffer | ArrayBuffer> {
@@ -40,7 +40,7 @@ export async function fetchAllianceLogo (
  * @return            A `Buffer` (node.js) or `ArrayByffer` (browser)
  */
 export async function fetchCharacterPortrait (
-  characterId: string,
+  characterId: number,
   size: number,
   tenant: 'tranquility' | 'singularity' = 'tranquility'
 ): Promise<Buffer | ArrayBuffer> {
@@ -59,7 +59,7 @@ export async function fetchCharacterPortrait (
  * @return            A `Buffer` (node.js) or `ArrayByffer` (browser)
  */
 export async function fetchCorporationLogo (
-  corporationId: string,
+  corporationId: number,
   size: number,
   tenant: 'tranquility' | 'singularity' = 'tranquility'
 ): Promise<Buffer | ArrayBuffer> {
@@ -78,7 +78,7 @@ export async function fetchCorporationLogo (
  * @return            A `Buffer` (node.js) or `ArrayByffer` (browser)
  */
 export async function fetchTypeIcon (
-  typeId: string,
+  typeId: number,
   size: number,
   tenant: 'tranquility' | 'singularity' = 'tranquility'
 ): Promise<Buffer | ArrayBuffer> {
@@ -97,7 +97,7 @@ export async function fetchTypeIcon (
  * @return            A `Buffer` (node.js) or `ArrayByffer` (browser)
  */
 export async function fetchTypeRender (
-  typeId: string,
+  typeId: number,
   size: number,
   tenant: 'tranquility' | 'singularity' = 'tranquility'
 ): Promise<Buffer | ArrayBuffer> {

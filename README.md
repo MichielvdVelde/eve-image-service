@@ -9,7 +9,7 @@ All methods return a `Buffer` in node.js, and an `ArrayBuffer` in the browser.
 
 ### API
 
-#### `fetchAllianceLogo(allianceId: string, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
+#### `fetchAllianceLogo(allianceId: number, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
 
 Fetch the alliance logo.
 
@@ -17,7 +17,7 @@ Fetch the alliance logo.
 * ***size***: The requested image size. Needs to be a power of two
 * ***tenant***: The tenant, defaults to `tranquility`
 
-#### `fetchCharacterPortrait(characterId: string, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
+#### `fetchCharacterPortrait(characterId: number, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
 
 Fetch the character's portrait.
 
@@ -25,7 +25,7 @@ Fetch the character's portrait.
 * ***size***: The requested image size. Needs to be a power of two
 * ***tenant***: The tenant, defaults to `tranquility`
 
-#### `fetchCorporationLogo(corporationId: string, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
+#### `fetchCorporationLogo(corporationId: number, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
 
 Fetch the corporation logo.
 
@@ -33,7 +33,7 @@ Fetch the corporation logo.
 * ***size***: The requested image size. Needs to be a power of two
 * ***tenant***: The tenant, defaults to `tranquility`
 
-#### `fetchTypeIcon(typeId: string, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
+#### `fetchTypeIcon(typeId: number, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
 
 Fetch the inventory type icon.
 
@@ -41,7 +41,7 @@ Fetch the inventory type icon.
 * ***size***: The requested image size. Needs to be a power of two
 * ***tenant***: The tenant, defaults to `tranquility`
 
-#### `fetchTypeRender(typeId: string, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
+#### `fetchTypeRender(typeId: number, size: number[, tenant: 'tranquility' | 'singularity' = 'tranquility'])`
 
 Fetch the inventory type render.
 
@@ -62,7 +62,7 @@ import { writeFile } from 'fs'
 
 const path = resolve(__dirname, './Eve-University.png')
 
-fetchCorporationLogo('917701062', 256).then(buf => {
+fetchCorporationLogo(917701062, 256).then(buf => {
   writeFile(path, buf, err => {
     if (err) {
       console.error(err)
