@@ -20,9 +20,9 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^3.8.3",
-    "@types/bent": "^7.0.1"
+    "@types/bent": "^7.0.2"
   },
   "dependencies": {
-    "bent": "^7.1.2"
+    "bent": "^7.3.0"
   }
 }
